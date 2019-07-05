@@ -1,0 +1,25 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>
+            Welcome to <%= title%>
+        </h1>
+        <div>
+            <%for(let i=0;i < nav.length;i++){%>
+                <a href=<%=nav[i].link%>><%=nav[i].title%></a>
+            <%}%>
+        </div>
+        <div>
+            <%for(let i=0;i < javascript.length;i++){%>
+                <h3><%=javascript[i].title%></h3>
+                 <h4><span><%=javascript[i].author%></span></h4>
+                  <a href="/javascript/<%=i%>>">Read More</a>
+            <%}%>
+        </div>
+        
+        
+        
+    </body>
+</html>
